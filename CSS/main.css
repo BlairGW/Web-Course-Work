@@ -1,0 +1,22 @@
+body {background-color: #040D12;}
+.header {background-color: #183D3D; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+h1, h2, h3, h4, h5, h6 {color: #93B1A6; font-family: "Lucida Console";}
+h1 {font-size: 36pt}
+h2 {font-size: 26pt}
+p {font-size: 10pt; color: #040D12} 
+
+main {background-color: #5C8374; border-radius: 10px;}
+
+aside {background-color: #183D3D; border-radius: 10px;}
+
+footer {background-color: #040D12; border-radius: 10px;}
+
+nav li {border: 2px; background-color: #183D3D; list-style-type: none;}
+nav li a {color:#5C8374; text-align: center; text-decoration: none;}
+nav li:hover{background-color: #5C8374;}
+.active {background-color: #93B1A6}
+
+table {font-family: "Lucida Console"; border-collapse: collapse;}
+table th, table td {border: 2px solid #F0F0F0}
+table tr:hover{background-color: #93B1A6;}
+table th{background-color: #040D12; color: #FFFFFF}
