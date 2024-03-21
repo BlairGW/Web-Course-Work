@@ -23,3 +23,5 @@ table {font-family: "Lucida Console"; border-collapse: collapse;}
 table th, table td {border: 2px solid #F0F0F0}
 table tr:hover{background-color: #93B1A6;}
 table th{background-color: #040D12; color: #FFFFFF}
+
+#logInForm {float:right}

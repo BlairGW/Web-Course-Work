@@ -1,12 +1,17 @@
 <html>  
     <head>
         <title>Techno Society</title>
-        <h1>Techno Society</h1>
         <link rel="stylesheet" href="css/main.css">
+        
     </head>
 
     <body>
-        <header> </header>
+        <header>
+            <h1>Rave Society</h1>
+            <img id=logo src="images/Logo.png" alt="People on a bender">
+        </header>
+
+        <h3>Image Gallery</h3>
 
         <nav> 
             <ul>
@@ -14,37 +19,31 @@
                 <li class="active"><a href='img_gallery.html'>Gallery</a></li>
                 <li><a href='event_calendar.html'>Events</a></li>
                 <li><a href='current_members.html'>Members</a></li>
-                <li><a href='contact_us.html'>contact_us</a></li>
+                <li><a href='contact_us.html'>Contact Us</a></li>
+                <li><a href='store.html'>Store</a></li>
+                <li><a href='blackPage.html'>Blank Page</a></li>
             </ul>
         </nav>
 
         <main>
-            <div> 
-                <img src="images/Unity51web1.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/unity51web2.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/unity51web3.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/tunnelsWeb1.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/tunnelsWeb2.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/TerminalVweb1.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/TerminalVweb2.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/TerminalVweb3.jpg" alt="People on a bender">
-            </div>
-            <div> 
-                <img src="images/TerminalVweb4.jpg" alt="People on a bender">
+            <div id="img-gallery" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Unity51web1.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                        <img src="images/unity51web2.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                        <img src="images/unity51web3.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/tunnelsWeb1.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                        <img src="images/tunnelsWeb2.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                        <img src="images/TerminalVweb1.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/TerminalVweb2.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                        <img src="images/TerminalVweb3.jpg" class="gallery-img" alt="People on a bender" height="270" width="480"> 
+                        <img src="images/TerminalVweb4.jpg" class="gallery-img" alt="People on a bender" height="270" width="480">
+                    </div>
+                </div>
             </div>
 
         </main>
@@ -52,5 +51,17 @@
         <aside> </aside>
 
         <footer> </footer>
+
+        <script>
+            var galleryImages = document.querySelectorAll('.gallery-img');
+            galleryImages.forEach(function(image) {
+                image.addEventListener("mouseover", function() {
+                    this.style.border = "solid red 1px";
+                });
+                image.addEventListener("mouseout", function() {
+                    this.style.border = "none";
+                });
+            });
+        </script>
     </body>
 </html>
