@@ -4,7 +4,7 @@ h1, h3, h4, h6 {color: #93B1A6; font-family: "Lucida Console";}
 h5, h2 {color:#F0F0F0; font-family: "lucida Console";}
 h1 {font-size: 36pt; display: inline;}
 h2 {font-size: 26pt}
-p {font-size: 10pt; color: #040D12} 
+p {font-size: 15pt; color: #040D12} 
 
 #logo {height: 50px; width: 50px; margin-right: 10px; float: left;}
 
@@ -21,7 +21,7 @@ nav li:hover{background-color: #040D12;}
 .active {background-color: #93B1A6}
 
 table {font-family: "Lucida Console"; border-collapse: collapse;}
-table th, table td {border: 2px solid #F0F0F0}
+table th, table td {border: 2px solid #F0F0F0; width: 100px; text-align: center; font-size: 10px;}
 table tr:hover{background-color: #93B1A6;}
 table th{background-color: #040D12; color: #FFFFFF}
 
@@ -29,3 +29,4 @@ table th{background-color: #040D12; color: #FFFFFF}
 
 #right-col {float:right;  position: fixed;}
 #left-col {float:left; width: 800px;}
+
