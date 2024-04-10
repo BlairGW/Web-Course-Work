@@ -1,7 +1,7 @@
 body {background-color: #040D12;}
 header {background-color: #183D3D; padding: 10px; border-radius: 10px;}
-h1, h2, h3, h4, h6 {color: #93B1A6; font-family: "Lucida Console";}
-h5 {color:#F0F0F0; font-family: "lucida Console";}
+h1, h3, h4, h6 {color: #93B1A6; font-family: "Lucida Console";}
+h5, h2 {color:#F0F0F0; font-family: "lucida Console";}
 h1 {font-size: 36pt; display: inline;}
 h2 {font-size: 26pt}
 p {font-size: 10pt; color: #040D12} 
@@ -15,7 +15,7 @@ aside {background-color: #183D3D; border-radius: 10px;}
 footer {background-color: #040D12; border-radius: 10px;}
 
 nav ul {margin: 0; padding: 0; overflow: hidden;}
-nav li {border: 2px; background-color: #183D3D; list-style-type: none; float:left; width: 15%; padding: 16px;}
+nav li {border: 2px; background-color: #183D3D; list-style-type: none; float:left; width: 14.28%; padding: 16px;}
 nav li a {color:#F0F0F0; text-align: center; text-decoration: none;}
 nav li:hover{background-color: #040D12;}
 .active {background-color: #93B1A6}
