@@ -1,6 +1,7 @@
 body {background-color: #040D12;}
 header {background-color: #183D3D; padding: 10px; border-radius: 10px;}
-h1, h2, h3, h4, h5, h6 {color: #93B1A6; font-family: "Lucida Console";}
+h1, h2, h3, h4, h6 {color: #93B1A6; font-family: "Lucida Console";}
+h5 {color:#F0F0F0; font-family: "lucida Console";}
 h1 {font-size: 36pt; display: inline;}
 h2 {font-size: 26pt}
 p {font-size: 10pt; color: #040D12} 
@@ -25,3 +26,6 @@ table tr:hover{background-color: #93B1A6;}
 table th{background-color: #040D12; color: #FFFFFF}
 
 #logInForm {float:right}
+
+#right-col {float:right;  position: fixed;}
+#left-col {float:left; width: 800px;}
