@@ -10,7 +10,7 @@
         <!--Header-->
         <header>
             <h1>Rave Society</h1>
-            <img id=logo src="images/Logo.png" alt="People on a bender">
+            <img id=logo src="images/Logo.png" alt="Society logo">
         </header>
 
         <h3>Contact Us</h3>
@@ -28,44 +28,50 @@
         </nav>
         <!--Page content-->
         <main>
-            <div class="left-col">
-                <!--Contact us form-->
-                <form>
-                    <fieldset>
-                        <legend>Contact us using the below form.</legend>
-    
-                        <label for="name">Name:</label>
-                        <Input type="text" id="name" value=""><br>
-                        <label for="email">Email:</label>
-                        <Input type="email" id="email" value=""><br>
-                        <label for="Member">Member</label>
-                        <input type="radio" id="Member" name="Membership Status" value="Member">
-                        <label for="Non-Member">Non Member</label>
-                        <input type="radio" id="Non-Member" name="Membership Status" value="Non-Member"><br>
-                        <label for="Comment">Comment:</label>
-                        <Input type="text" id="Comment" value=""><br>
-    
-                    </fieldset>
-                </form>
-    
-                <div>
-                    <p id="form_outcome">
-                        <button type="button" onclick='formSubmit()'>
-                            submit
-                        </button>
-                    </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9">
+                      <!--Image Carousel-->
+                      <form>
+                        <fieldset>
+                            <legend>Contact us using the below form.</legend>
+        
+                            <label for="name">Name:</label>
+                            <Input type="text" id="name" value=""><br>
+                            <label for="email">Email:</label>
+                            <Input type="email" id="email" value=""><br>
+                            <label for="Member">Member</label>
+                            <input type="radio" id="Member" name="Membership Status" value="Member">
+                            <label for="Non-Member">Non Member</label>
+                            <input type="radio" id="Non-Member" name="Membership Status" value="Non-Member"><br>
+                            <label for="Comment">Comment:</label>
+                            <Input type="text" id="Comment" value=""><br>
+        
+                        </fieldset>
+                    </form>
+        
+                    <div>
+                        <p id="form_outcome">
+                            <button type="button" onclick='formSubmit()'>
+                                submit
+                            </button>
+                        </p>
+                    </div>
+                      
+                    </div>
+                    <!--Twitter embed for right side colum-->
+                    <div class="col-3">
+                        <a class="twitter-timeline" data-width="220" href="https://twitter.com/Catsillyness?ref_src=twsrc%5Etfw">Tweets by Catsillyness</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    </div>
                 </div>
-            </div>
+                
             <!--Twitter embed of cats-->
-            <div class="right-col">
-                <a class="twitter-timeline" data-width="220" href="https://twitter.com/Catsillyness?ref_src=twsrc%5Etfw">Tweets by Catsillyness</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-            </div>
         </main>
 
         <aside> </aside>
 
         <footer>
-            <p>Copyright BLAIR GOLDSWORTHY 2024</p> </footer>
+            <p style="color: #F0F0F0;">Copyright BLAIR GOLDSWORTHY 2024</p> </footer>
 
         <script src="main.js"></script>
     </body>

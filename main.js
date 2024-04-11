@@ -3,8 +3,8 @@ function formSubmit(){
 }
 
 function login() {
-  var title = document.forms["email"]["email"].value;
-  var date = document.forms["password"]["password"].value;
+  var title = document.forms["logInForm"]["email"].value;
+  var date = document.forms["logInForm"]["password"].value;
   if (title == "") {
   alert("You must enter a valid email address.");
   }

@@ -21,7 +21,7 @@
         <!--Header-->
         <header>
             <h1>Rave Society</h1>
-            <img id=logo src="images/Logo.png" alt="People on a bender">
+            <img id=logo src="images/Logo.png" alt="Society logo">
         </header>
 
         <h3>Event Calender</h3>
@@ -85,6 +85,7 @@
             </div>
             <!--Recommendations Form-->
             <p>Want to recommend and event? Tell us bellow!</p>
+            <form id="event">
             <label for="event_title">Event Name:</label>
             <Input type="text" id="event_title" value=""><br>
             <label for="event_date">Date:</label>
@@ -92,6 +93,7 @@
             <button type="button" onclick='submit_event()'>
                 submit
             </button>
+        </form>
             <!--Submit event script and validation-->
             <script>
                 function submit_event() {
@@ -116,7 +118,7 @@
         <aside> </aside>
 
         <footer>
-            <p>Copyright BLAIR GOLDSWORTHY 2024</p>
+            <p style="color: #F0F0F0;">Copyright BLAIR GOLDSWORTHY 2024</p>
         </footer>
     </body>
 </html>
