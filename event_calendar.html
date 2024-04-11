@@ -1,3 +1,14 @@
+<!--
+    Threat Modle
+
+    Threat source: External
+    Threat Agent: AnonyMouse
+    Threat Intention: Intentional
+    Threat Motivation: Embarresing society members to shrink society
+    Threat Impact: Reducing society size and embarresing members.
+    Threat Mitigation: Validation of event suggestions entered to avoid false dates and events being submitted.
+-->
+
 <!DOCTYPE html>
     <head>
         <title>Techno Society</title>
@@ -7,13 +18,14 @@
     </head>
 
     <body>
+        <!--Header-->
         <header>
             <h1>Rave Society</h1>
             <img id=logo src="images/Logo.png" alt="People on a bender">
         </header>
 
         <h3>Event Calender</h3>
-
+        <!--Navigation-->
         <nav> 
             <ul>
                 <li><a href='index.html'>Home</a></li>
@@ -28,6 +40,7 @@
 
         <main> 
             <div>
+                <!--Table of dates and events-->
                 <table>
                     <tr>
                         <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
@@ -70,16 +83,34 @@
                     </tr>
                 </table>
             </div>
-
+            <!--Recommendations Form-->
             <p>Want to recommend and event? Tell us bellow!</p>
             <label for="event_title">Event Name:</label>
             <Input type="text" id="event_title" value=""><br>
             <label for="event_date">Date:</label>
             <Input type="date" id="event_date" value=""><br>
-            <button type="button" onclick='formSubmit()'>
+            <button type="button" onclick='submit_event()'>
                 submit
             </button>
-                            
+            <!--Submit event script and validation-->
+            <script>
+                function submit_event() {
+                    var title = document.forms["event"]["event_title"].value;
+                    var date = document.forms["event"]["event_date"].value;
+                    if (title == "") {
+                    alert("An event must have a title!");
+                    }
+                    else {
+                        if (date.length == 0) {
+                        alert("An event must have a date!");
+                        }
+                        else {
+                        alert("Event submitted! The society will contact you soon!");
+                        }
+                    }
+                }
+            </script>
+                
         </main>
 
         <aside> </aside>
